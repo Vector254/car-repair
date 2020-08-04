@@ -52,3 +52,84 @@
   padding-bottom: 15px;
   padding-top: 15px;
 }
+
+/*client counter styling*/
+
+.container {
+  margin-top: 100px
+}
+
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  font-weight: 500
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color:whitesmoke;
+}
+
+.counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  line-height: 28px
+}
+
+.counter-box {
+  background: #3acf87
+}
+}
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+  color: #fff
+}
+
+
+/*footer styling*/
+#footer{
+
+  background: darkgrey;
+  color: black;
+  padding-top: 20px;
+
+}
+#footer h4{
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.connect-us{
+  text-align: center;
+}
+.connect-us hr{
+  background-color: black;
+  width: 60%;
+}
+#footer li{
+  color: black;
+}
+.copyright{
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.fa {
+  color: black;
+}
