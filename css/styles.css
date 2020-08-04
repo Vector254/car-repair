@@ -1,0 +1,28 @@
+/*Navbar styling*/
+#navbar{
+    background-color: #322f3d ;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    height: 70px;
+    font-size: 15px;
+  }
+  #navbar ul{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+  }
+  #navbar li a {
+    color: whitesmoke;
+    padding: 20px;
+    text-decoration: none;
+  
+  }
+  #navbar li a:hover{
+    background-color: #4b5d67; 
+    border-radius: 20px;
+  }
