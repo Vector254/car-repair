@@ -46,7 +46,7 @@
           <img class="d-block w-100" src="imgs/Car-Maintenance.jpg" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
             <!--Edit this-->
-			<a href="###"><button type="button" class="btn btn-success">Talk To A Mechanic</button></a>
+			<a href="#mechanics"><button type="button" class="btn btn-success">Talk To A Mechanic</button></a>
 			<a href="#mapping"> <button type="button" class="btn btn-success">My location</button></a>
 			
           </div>
@@ -140,9 +140,9 @@
     </div>
   </section>
   <section id="mapping">
-	  <h3>Think you are lost? Find out exactly where you are below</h3>
-	<input type="button" class="btn btn-primary" value="where am I?" id="mapper">
-	<div class="row">
+    <h3>Know your location and talk to a mechanic nearby below</h3>  
+    <input type="button" class="btn btn-primary" value="where am I?" id="mapper">
+    <div class="row">
 		<div class="col-md-7">
 	<div id="map"></div>
 		</div>
@@ -158,9 +158,34 @@
 		</ul>
 		</div>
 	</div>
-	</div>
-  </section>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+  <h5>Choose your location to get nearby mechanics</h5>
+    <form name="myform" id="myForm">
+      Select Country: <select name="country" class="form-control"id="countrySel" size="1">
+      <option value="" selected="selected">Select Country</option>
+      </select>
+      <br>
+      <br>
+      Select County: <select name="county"class="form-control" id="countySel" size="1">
+      <option value="" selected="selected">Please select Country first</option>
+      </select>
+      <br>
+      <br>
+      Select Subcounty: <select name="subCounty" class="form-control"id="subSel" size="1">
+      <option value="" selected="selected">Please select County first</option>
+      </select><br>
+      <input type="button" id="help" class="btn btn-primary" value="submit"><br>
+      <textarea name="mechanics" id="available" cols="30" rows="5" readonly></textarea>  
+    </form>
   
+  </div>
+  <div class="col-md-3"></div>
+  </div>
+  </section>
+
 <section id="clients">
   <div class="container">
     <div class="row">

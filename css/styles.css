@@ -158,6 +158,15 @@
     width: 200px;
     height: 80px;
 }
+#myForm{
+  text-align: center;
+  margin: auto;
+  background-color: #cedebd;
+  padding: 20px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 10px;
+}
 
 #info{
     padding-top: 80px;
