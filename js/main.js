@@ -3,10 +3,6 @@ $(document).ready(function(){
       $("#map").show();
    })
 
-   
-	// TO MAKE THE MAP APPEAR YOU MUST
-	// ADD YOUR ACCESS TOKEN FROM
-	// https://account.mapbox.com
 	mapboxgl.accessToken = 'pk.eyJ1IjoidmVjdG9yMjU0IiwiYSI6ImNrZGdibmluNDI0MGkydXQ5aGdyNWdoN2wifQ.zE3Z--3B1hjMRoChCWwTKw';
 var map = new mapboxgl.Map({
 container: 'map', // container id
