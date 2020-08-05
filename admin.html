@@ -8,20 +8,23 @@
     <script src="js/main.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
     <title>ADMIN</title>
+    
 </head>
 <body>
-    
     <header>
-        <div class="titleadmin">
-            <h1><b>CAR REPAIR WEBSITE</b></h1></div>
-        <nav>
-            <ul>
-                <li>LOGIN AS USER</li>
-                <li>HOME</li>
-            </ul>
-        </nav>
+        <div class="jumbotron">
+    <nav>
+        <ul class="navig">
+            <li><a href="#">Back To User</a></li>
+            <li><a href="#">Home </a></li>
+        </ul>
+    </nav>
+            <div class="titleadmin">
+            <h1><b>CAR REPAIR WEBSITE</b></h1></div></div>
+        
        
     </header>
+    
     <div class="container">
     <h5><b>You are logged in as an admin. You are probably a mechanic or a driver that encountered an issue with your vehicle and want to share with others who
         may find yourself in the situation you were in.
@@ -56,11 +59,15 @@
         <textarea id="fix" placeholder="Enter text here.."></textarea>
         <br><br>
         <button type="button" class="btn btn-primary" id="share" onclick="shareIssue()">SHARE</button>
+        <br><br>
+        <div class="output"></div>
     </form>
 <br><br><br>
     <h2><b>THANK YOU FOR SHARING</b></h2>
 
 </div>
+
+
 
 </body>
 </html>
