@@ -141,11 +141,10 @@
 }
 
 #map {
-    text-align: center;
-    margin: auto;
-    width: 500px;
+  
+    width: 100%;
     display: none; 
-    height: 400px;
+    height: 350px;
     border-style: solid;
 
 }
@@ -153,6 +152,11 @@
     background-color: #4b5d67;
     height: 50px;
     padding-top: 10px;
+}
+#mapper{
+    margin-top: 50px;
+    width: 200px;
+    height: 80px;
 }
 
 #info{
