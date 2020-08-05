@@ -1,4 +1,4 @@
-HEAD
+
 
 /*Navbar styling*/
 #navbar{
@@ -10,7 +10,7 @@ HEAD
     position: sticky;
     top:0;
     z-index: 10;
-    height: 70px;
+    height: 100px;
     font-size: 15px;
   }
   #navbar ul{
@@ -27,6 +27,7 @@ HEAD
   #navbar li a:hover{
     background-color: #4b5d67; 
     border-radius: 20px;
+    text-transform: uppercase;
   }
 #manuals {
   background: #cedebd;
@@ -158,6 +159,7 @@ HEAD
 
    text-align: center;
    margin-left: 200px;
+   margin-top: 500px;
 }
 
 body {
