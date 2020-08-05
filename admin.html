@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/main.js"></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <title>ADMIN</title>
+</head>
+<body>
+    
+    <header>
+        <div class="titleadmin">
+            <h1><b>CAR REPAIR WEBSITE</b></h1></div>
+        <nav>
+            <ul>
+                <li>LOGIN AS USER</li>
+                <li>HOME</li>
+            </ul>
+        </nav>
+       
+    </header>
+    <div class="container">
+    <h5><b>You are logged in as an admin. You are probably a mechanic or a driver that encountered an issue with your vehicle and want to share with others who
+        may find yourself in the situation you were in.
+    </b></h5><br><br><hr>
+    <h3><b><u>Please Fill in This Form</u></b></h3>
+
+    <form>
+        <label for="names"><b>First Name:</b></label> <br>
+        <input type="text" id="names" placeholder="Arthur.."><br><br><hr>
+        <label for="second"><b>Last Name</b></label><br>
+        <input type="text" id="lastName" placeholder="Your last name.."><br><br><hr>
+        <label for="carselect"><b>Car Model</b></label><br>
+        <select name="cars" id="carselect">
+            <option value="sub">Subaru</option>
+            <option value="toyota">Toyota</option>
+            <option value="BMW">BMW</option>
+            <option value="mazda">Mazda</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="nissan">Nissan</option>
+            <option value="mitsubishi">Mitsubishi</option>
+            <option value="jeep">Jeep</option>
+            <option value="vw">Volkswagen</option>
+            <option value="merc">Mercedes</option>
+            <option value="porsche">Porsche</option>
+            <option value="audi">Audi</option>
+            <option value="volvo">Volvo</option>
+        </select><hr>
+        <br>
+        <label for="issue"><b>What issue did you face?</b></label><br>
+        <textarea id="issue" placeholder="Enter text here.."></textarea> <br><hr>
+        <label for="fix"><b>How did you resolve it?</b></label><br>
+        <textarea id="fix" placeholder="Enter text here.."></textarea>
+        <br><br>
+        <button type="button" class="btn btn-primary" id="share" onclick="shareIssue()">SHARE</button>
+    </form>
+<br><br><br>
+    <h2><b>THANK YOU FOR SHARING</b></h2>
+
+</div>
+
+</body>
+</html>

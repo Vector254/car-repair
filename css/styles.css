@@ -1,3 +1,4 @@
+HEAD
 
 /*Navbar styling*/
 #navbar{
@@ -158,3 +159,13 @@
    text-align: center;
    margin-left: 200px;
 }
+
+body {
+    background-image: url('carstuck.jpg');
+    font-family: "Poppins";
+   
+}
+.titleadmin {
+    text-align: center;
+}
+
