@@ -1,3 +1,5 @@
+
+
 /*Navbar styling*/
 #navbar{
     background-color: #322f3d ;
@@ -8,7 +10,7 @@
     position: sticky;
     top:0;
     z-index: 10;
-    height: 70px;
+    height: 100px;
     font-size: 15px;
   }
   #navbar ul{
@@ -25,6 +27,7 @@
   #navbar li a:hover{
     background-color: #4b5d67; 
     border-radius: 20px;
+    text-transform: uppercase;
   }
 
 /*About us styling*/
@@ -112,7 +115,7 @@
 .counter-box {
   background: #3acf87
 }
-}
+
 .counter-box.colored p,
 .counter-box.colored i,
 .counter-box.colored .counter {
@@ -193,3 +196,91 @@
 .fa {
   color: black;
 }
+#mapping{
+    text-align: center;
+}
+
+#map {
+  
+    width: 100%;
+    display: none; 
+    height: 350px;
+    border-style: solid;
+
+}
+#mapping h3{
+    background-color: #4b5d67;
+    height: 50px;
+    padding-top: 10px;
+}
+#mapper{
+    margin-top: 50px;
+    width: 200px;
+    height: 80px;
+}
+#myForm{
+  text-align: center;
+  margin: auto;
+  background-color: #cedebd;
+  padding: 20px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+#info{
+    padding-top: 80px;
+    text-align: left;
+    display: none;
+    font-style: italic;
+}
+
+body {
+    background-image: url(carstuck.jpg);
+    font-family: "Poppins";
+   
+}
+.titleadmin {
+    text-align: center;
+}
+
+.navig {
+    float: right;
+    display: inline-flex;
+
+}
+nav ul {
+margin: 0em;
+list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+    padding-top: 20px;
+
+    position: relative;
+}
+nav a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+nav a:hover {
+    color: black;
+}
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    
+    
+
+}
+
+nav a:hover::before {
+    width: 100 ;
+}
+
