@@ -1,330 +1,203 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+  </head>
+<style>;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {box-sizing: border-box;}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" >
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-	crossorigin="anonymous"></script>
-	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
-  <script src="js/jquery-3.5.1.js"></script>
-  <script src="js/bootstrap.js"></script>
-  <script src="js/main.js"></script>
-  <title>CAR_REPAIR | WEBSITE</title>
-</head>
 
-<body>
-	<div class="container-fluid">
-  <!--Navbar styling-->
-    <nav id="navbar">
-    <h4>VEHICLE SELF REPAIR</h4>
-    <ul>
-      <!--edit this-->
-      <li><a href="#home">home</a></li>
-      <li><a href="#about">diagnose</a></li>
-      <li><a href="#meals">shop</a></li>
-      <li><a href="#order">mechanics</a></li>
-      <li><a href="#contact">contact</a></li>
-      <li><input type="text" placeholder="Search.."></li>
-    </ul>
-  </nav>
-  <section id="carosel">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="imgs/Car-Maintenance.jpg" alt="First slide">
-          <div class="carousel-caption d-none d-md-block">
-            <!--Edit this-->
-			<a href="#mechanics"><button type="button" class="btn btn-success">Talk To A Mechanic</button></a>
-			<a href="#mapping"> <button type="button" class="btn btn-success">My location</button></a>
-			
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="imgs/imgs.jpeg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="imgs/Professional-Car-Mechanic.jpg" alt="Third slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-    <!--end of carosel-->
-  </section>
-  <section id="about-us">
-    <h2>ABOUT US</h2>
-    <div class="about">
-      <p>At our independently owned and operated car repair shop, we always strive to offer honest services at affordable prices.
-      For over 2 years, we have helped repair cars manufactured in Japan, Korea and beyond! We know what issues to look for with specific brands and models.
-      Therefore, we’re more likely to identify prevalent problems with import brands than other mechanics. Altogether, <strong> we help cars last longer </strong> with our specialized services.
-        Our focus on fuel efficiency also helps us save you more cash.</p>
-    </div>
-  </section>
-<section id="manuals">
-  <h2>AUTO REPAIR MANUALS</h2>
-      <div class="row">
-          <div class="col-sm-6">
-              <div class="card border-primary">
-                  <div class="card-header bg-secondary">
-                      <h3>Troubleshooting</h3>
-                  </div>
-                  <div class="card-body">
-                    <ul>
-                      <li>Ask a mechanic</li>
-                      <li>Car won't start</li>
-                      <li>Repair manuals</li>
-                      <li>OBD codes</li>
-                    </ul>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm-6">
-              <div class="card border-primary">
-                  <div class="card-header bg-secondary">
-                      <h3>Simple Repairs</h3>
-                  </div>
-                  <div class="card-body">
-                      <ul>
-                          <li>Spark plug</li>
-                          <li>Car Battery</li>
-                          <li>Brakes</li>
-                          <li>Alternator</li>
-                      </ul>
-              </div>
-          </div>
-          </div>
-      </div>
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
 
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="card-group">
-            <div class="card border-primary">
-                <div class="card-header bg-secondary">
-                    <h3>Major Repairs</h3>
-                </div>
-                <div class="card-body">
-                  <ul>
-                    <li>Radiator</li>
-                    <li>Air bags</li>
-                    <li>Repair cost</li>
-                    <li>Head gasket</li>
-                  </ul>
-                </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card border-primary">
-                <div class="card-header bg-secondary">
-                    <h3>Maintainance</h3>
-                </div>
-                <div class="card-body">
-                    <ul>
-                        <li>Oil change</li>
-                        <li>Air filter</li>
-                        <li>Coolant flush</li>
-                        <li>Fuel filter</li>
-                    </ul>
-            </div>
-        </div>
-        
-    </div>
-  </section>
-  <section id="mapping">
-    <h3>Know your location and talk to a mechanic nearby below</h3>  
-    <input type="button" class="btn btn-primary" value="where am I?" id="mapper">
-    <div class="row">
-		<div class="col-md-7">
-	<div id="map"></div>
-		</div>
-		<div class="col-md-5">
-	<div id="info">	
-		<h4>Tips</h4>
-		<ul>
-		<li>Click the navigation icon to move to current location.</li>
-		<li>Double tap in map to zoom in.</li>
-		<li>Click navigation icon to zoom out</li>
-		<li>Double tap and hold to move</li>
-		<input type="button" class="btn btn-success" value="exit" id="exit">
-		</ul>
-		</div>
-	</div>
-  </div>
-  <div id="mechanics"class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-  <h5>Choose your location to get nearby mechanics</h5>
-    <form name="myform" id="myForm">
-      Select Country: <select name="country" class="form-control"id="countrySel" size="1">
-      <option value="" selected="selected">Select Country</option>
-      </select>
-      <br>
-      <br>
-      Select County: <select name="county"class="form-control" id="countySel" size="1">
-      <option value="" selected="selected">Please select Country first</option>
-      </select>
-      <br>
-      <br>
-      Select Subcounty: <select name="subCounty" class="form-control"id="subSel" size="1">
-      <option value="" selected="selected">Please select County first</option>
-      </select><br>
-      <input type="button" id="help" class="btn btn-primary" value="submit"><br>
-      <textarea name="mechanics" id="available" cols="30" rows="5" readonly></textarea>  
-    </form>
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+.connect-us hr {
+  height: 5px;
+  color: black;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+.jumbotron{
+ 
+  text-align: center;
+  height: 260px;
+}
+.jumbotron img{
+  border-radius: 100px;
+  width: 150px;
+  height: 100px;
+}
+.sign-up{
+  text-align: center;
+}
+.connect-us{
+  text-align: center;
+  background-color:darkgray;
   
-  </div>
-  <div class="col-md-3"></div>
-  </div>
-  <hr>
-  </section>
+}
+.login{
+  padding-top: 30px;
+  
+}
+.content{
+  background-color: darkseagreen;
+  margin-top: -30px;
+  margin-bottom: -20px;
+}
+.connect-us ul li{
+  color: black;
+}
+footer{
+  text-align: center;
+  font-style: italic;
+  background-color:darkgray;
+  font-size: 12px;
+}
 
-<section id="clients">
-  <div class="container">
-    <div class="row">
-        <div class="four col-md-3">
-            <div class="counter-box "> <i class="fa fa-thumbs-o-up"></i> <span class="counter">2167</span>
-                <p>Happy Customers</p>
-            </div>
-        </div>
-        <div class="four col-md-3">
-            <div class="counter-box"> <i class="fa fa-group"></i> <span class="counter">3218</span>
-                <p>Registered Members</p>
-            </div>
-        </div>
-        <div class="four col-md-3">
-            <div class="counter-box"> <i class="fa fa-shopping-cart"></i> <span class="counter">216</span>
-                <p>Available Manuals</p>
-            </div>
-        </div>
-        <div class="four col-md-3">
-            <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter">1721</span>
-                <p>Active Users</p>
-            </div>
-        </div>
-	</div>
-	
-</div>
-</section>
-<section id="reviews">
-    <h3>Customer Reviews</h3>
-    <div class="row">
-      <div class="col-md-6">
-        <hr>
-        <blockquote class="blockquote-reverse">
-          <p> I'm not one who normally does reviews, but I felt I needed to for this business.  
-            They seem very friendly, helpful, reasonable, and believe it or not honest.  </p>
-            <footer class="reviewer"> Jayden Uhuru__ <cite title="Source Title">Kiambu, kenya</cite></footer>
-        </blockquote>
-        
-      </div>
-      <div class="col-md-6">
-        <hr>
-        <blockquote class="blockquote-reverse">
-          <p> Took me 3 weeks with google/online searches and youtube videos. They helped me figured it out in less than a day. Lesson learned. Better leave it to the pro's next time.</p>
-          <footer class="reviewer"> Cate Koech__ <cite title="Source Title">kericho, Kenya</cite></footer>
-        </blockquote>
-      </div>
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+  <div class="container-fuid">
+    <div class="jumbotron">
+      <h2>Welcome to</h2> 
+      <img src="imgs/icon.png" alt="icon">
+      <h2><b>VEHICLE SELF REPAIR</b></h2>
     </div>
-    <div class="row">
-      <div class="col-md-6">
-        <hr>
-        <blockquote>
-          <p>I'll start by saying the guys here are very nice and I wanted so much for them to make it right..</p>
-          <footer class="reviewer"> Dan Mwangi__ <cite title="Source Title">Nakuru, Kenya</cite></footer>
-        </blockquote>
-      </div>
-      <div class="col-md-6">
-        <hr>
-        <blockquote>
-          <p> These guys were very honest and told me not to worry about certain issues </p>
-          <footer class="reviewer"> Fatuma kazin__ <cite title="Source Title">Mombasa, Kenya</cite></footer>
-        </blockquote>
-      </div>
+    <div class="content">
+    <div class="login">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+      <form action="">
+        <input type="text" class="form-control" placeholder="username" >
+        <input type="password" class="form-control" placeholder="password">
+      </form>
     </div>
+    <div class="col-md-3"></div>
+      </div>
     <div class="row">
+      <div class="col-md-3"></div>
       <div class="col-md-6">
-        <hr>
-        <blockquote>
-          <p>The oil gage was acting up and had the brake light on as well and they helped me fix it </p>
-          <footer class="reviewer"> Bob Kamau__ <cite title="Source Title">Nairobi, Kenya</cite></footer>
-        </blockquote>
+      <a href="user.html"><button class="btn btn-primary">user</button></a>
+      <a href="admin.html"><button class="btn btn-primary">admin</button></a>
       </div>
-      <div class="col-md-6">
-        <hr>
-        <blockquote>
-          <p>They were really patient in explaining what was wrong with my car, how he would fix it, and giving an exact quote</p>
-          <footer class="reviewer"> Ouma josh__ <cite title="Source Title">Kisumu, Kenya</cite></footer>
-        </blockquote>
-      </div>
+      <div class="col-md-3"></div>
+    </div> 
+      
+    
     </div>
     
-  
-</section>
-<section id="footer">
-
-
-
-
-  <div id="Contact">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="location">
-              <h4>Location</h4>
-              <ul>
-                  <li>Nation Center, Nairobi</li>
-                  <li> Kenyatta Avenue, 1st Floor <br></li>
-              </ul>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="footerSection2">
-              <h4>Business Services</h4>
-              <!--edit the link-->
-              <ul>
-                  <li><a href="#"></a>Advertise</li>
-                  <li><a href="#"></a>List a Shop</li>       
-              </ul>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="contact-info">
-                <h4>For any queries or feedback</h4>
-                <ul>
-                    <li><em>Phone</em>: 0700-886-001</li>
-                    <li><em>Email</em>: Car_repair@info.ke</li>
-                </ul>
-            </div>
-        </div> 
-        <div class="col-md-3">     
-          <h4>Newsletter Subscription</h4>     
-          <form class="input-group"> 
-              <input type="text" class="form-control form-control-sm" placeholder="email">
-              <button class="btn-sm btn-secondary" type="button">Subscribe</button>
-          </form>            
-      </div>  
+    
+    <div class="sign-up">
+    
+      <h4>Don't have an account?</h4>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:fit-content">Sign Up</button>
+    
     </div>
-  </div>
+    </div>
+    
     <div class="connect-us">
-      <hr class="line">
+      <hr>
           <h4>Connect with us on</h4>
           <ul>
               <a href="https://www.instagram.com/"> <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>  
@@ -332,13 +205,53 @@
               <a href="https://www.twitter.com/"> <i class="fa fa-twitter fa-3x" aria-hidden= "true"></i> </a>  
               <a href="https://www.youtube.com/"> <i class="fa fa-youtube fa-3x" aria-hidden= "true"></i> </a>  
           </ul>
+          <footer> Copyright CAR_REPAIR 2020</footer>
       </div>
-    <div class="copyright">
-        <p>CAR_REPAIR 	&nbsp;  © 2020</p>
+   
+
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
     </div>
-
+  </form>
 </div>
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
