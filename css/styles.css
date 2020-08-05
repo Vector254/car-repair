@@ -29,6 +29,29 @@
     border-radius: 20px;
     text-transform: uppercase;
   }
+
+/*About us styling*/
+#about-us{
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+#about-us h2{
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+}
+#about-us h2::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+  padding: 2px;
+}
+
+  /*Manuals styling*/
 #manuals {
   background: #cedebd;
 
@@ -39,8 +62,6 @@
   padding-top: 20px;
 
 }
-
-
 #manuals h2::after {
   content: '';
   background: #222;
@@ -102,13 +123,52 @@
 }
 
 
-/*footer styling*/
-#footer{
-
-  background: darkgrey;
+/*Reviews styling*/
+#reviews{
   color: black;
   padding-top: 20px;
+  background: #f0ece3;
+  padding: 15px;
+}
 
+#reviews h3{
+  text-align: center;
+  font-size: 30px;
+}
+#reviews h3::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+  padding: 2px;
+}
+
+
+#reviews .reviewer{
+  text-align: right;
+  font-style: italic;
+  color: #322f3d;
+  font-size: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer styling*/
+#footer{
+  background: darkgrey;
+  color: black;
+  padding-left: 40px;
 }
 #footer h4{
   text-transform: uppercase;
