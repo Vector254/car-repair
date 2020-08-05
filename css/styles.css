@@ -222,6 +222,15 @@
     display: none;
     font-style: italic;
 }
+#available {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: darkslategray;
+  resize: none;
+  font-family: monospace;
+  text-align: center;
+  display: none;
+}
 
 body {
     background-image: url(carstuck.jpg);
