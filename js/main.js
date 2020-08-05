@@ -2,6 +2,7 @@
 $(document).ready(function(){
    $("#mapper").click(function(){
       $("#map").show();
+      $("#info").show();
    })
 
 	mapboxgl.accessToken = 'pk.eyJ1IjoidmVjdG9yMjU0IiwiYSI6ImNrZGdibmluNDI0MGkydXQ5aGdyNWdoN2wifQ.zE3Z--3B1hjMRoChCWwTKw';
@@ -24,6 +25,7 @@ trackUserLocation: true
 );
 $("#exit").click(function(){
    $("#map").hide();
+   $("#info").hide();
 })
 
 });

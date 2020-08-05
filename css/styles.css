@@ -155,11 +155,11 @@
     padding-top: 10px;
 }
 
-#exit{
-
-   text-align: center;
-   margin-left: 200px;
-   margin-top: 500px;
+#info{
+    padding-top: 80px;
+    text-align: left;
+    display: none;
+    font-style: italic;
 }
 
 body {

@@ -22,7 +22,7 @@
 <body>
   <!--Navbar styling-->
   <nav id="navbar">
-    <h2>SELF REPAIR</h2>
+    <h2>VEHICLE <br>SELF REPAIR</h2>
     <ul>
       <!--edit this-->
       <li><a href="#home">home</a></li>
@@ -141,8 +141,22 @@
   <section id="mapping">
 	  <h3>Think you are lost? Find out exactly where you are below</h3>
 	<input type="button" class="btn btn-primary" value="where am I?" id="mapper">
-	<div id="map">	
+	<div class="row">
+		<div class="col-md-7">
+	<div id="map"></div>
+		</div>
+		<div class="col-md-5">
+	<div id="info">	
+		<h4>Tips</h4>
+		<ul>
+		<li>Click the navigation icon to move to current location.</li>
+		<li>Double tap in map to zoom in.</li>
+		<li>Click navigation icon to zoom out</li>
+		<li>Double tap and hold to move</li>
 		<input type="button" class="btn btn-success" value="exit" id="exit">
+		</ul>
+		</div>
+	</div>
 	</div>
   </section>
   
