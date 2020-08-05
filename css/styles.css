@@ -176,11 +176,51 @@
 }
 
 body {
-    background-image: url('carstuck.jpg');
+    background-image: url(carstuck.jpg);
     font-family: "Poppins";
    
 }
 .titleadmin {
     text-align: center;
+}
+
+.navig {
+    float: right;
+    display: inline-flex;
+
+}
+nav ul {
+margin: 0em;
+list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+    padding-top: 20px;
+
+    position: relative;
+}
+nav a {
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+}
+nav a:hover {
+    color: black;
+}
+nav a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    
+    
+
+}
+
+nav a:hover::before {
+    width: 100 ;
 }
 
