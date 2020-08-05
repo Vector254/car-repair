@@ -101,11 +101,9 @@
 
 /*footer styling*/
 #footer{
-
   background: darkgrey;
   color: black;
-  padding-top: 20px;
-
+  padding-left: 40px;
 }
 #footer h4{
   text-transform: uppercase;
