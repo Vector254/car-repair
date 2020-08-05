@@ -215,6 +215,11 @@
   border-style: solid;
   border-radius: 10px;
 }
+hr{
+    top: -0.5em;
+    height: 1em;
+  }
+
 
 #info{
     padding-top: 30px;
