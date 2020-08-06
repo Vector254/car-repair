@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/wrench.png" />
   </head>
 <style>;
 body {
@@ -156,6 +157,7 @@ footer{
   }
 }
 </style>
+<title>SelfRepair</title>
 <body>
   <div class="container-fuid">
     <div class="jumbotron">
@@ -257,6 +259,9 @@ function userRedirect() {
   if ((username=="")||(password=="")){
       alert("Please enter valid details!")
   }
+  else if (password.length < 8) {
+   alert("password should be atleast 8 characters long!"); 
+  }
   else{
     window.location.href = "user.html";
   }
@@ -266,6 +271,9 @@ function adminRedirect() {
   var password=document.getElementById("pass").value;
   if ((username=="")||(password=="")){
       alert("Please enter valid details!")
+  }
+  else if (password.length < 8) {
+   alert("password should be atleast 8 characters long!");
   }
   else{
     window.location.href = "admin.html";
