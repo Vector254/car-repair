@@ -32,35 +32,51 @@
             padding-left: 100px;
         }
         .side_bar{
-            position: absolute;
-            background-color:  #cedebd;
-            border-radius: 10px;
+            background-color:  rgb(206, 222, 189,0.7);
+            margin: 10px;
+            text-align: center;
+            position: sticky;
+            height: 50px;
+            border-radius: 20px;
+            z-index: 10;
         }
-        .side_bar ul li{
-            display: block;
-            padding-left: 10px;
-            padding-right: 20px;
+       
+        .side_bar li{
+            display: inline;
+            padding-left: 50px;
+            margin: 15px;   
         }
+        #logo{
+            width: 100px;
+            height: 80px;
+            border-radius: 50px;
+        }
+        
         .side_bar li a:hover{
             text-transform: uppercase;
         }
     </style>
     <div class="container-fluid">
-        <h3>Know your location and talk to a mechanic nearby below</h3>  
+        <div class="row">
+            <div class="col-md-6">
+                <img id="logo"src="imgs/icon.png" alt="">
+            </div>
+            
+        <div class="col-md-6">
         <div class="side_bar">
-            <ul><li><u>navigation</u></li>
+            
                 <li><a href="user.html">home</a></li>
                 <li><a href="index.html">log out</a></li>
             </ul>
         </div>
-        <section id="mapping">
-            
-            <input type="button" class="btn btn-primary" value="where am I?" id="mapper">
+        </div>
+        </div>
+        <h3>Know your location and talk to a mechanic nearby below</h3>  
+        <section id="mapping"> 
             <div class="row">
-                <div class="col-md-7">
+                <div class="col-md-6">
+                    <input type="button" class="btn btn-primary" value="where am I?" id="mapper">
             <div id="map"></div>
-                </div>
-                <div class="col-md-5">
             <div id="info">	
                 <h4>Tips</h4>
                 <ul>
@@ -70,35 +86,30 @@
                 <li>Double tap and hold to move</li>
                 <input type="button" class="btn btn-success" value="exit" id="exit">
                 </ul>
-                </div>
             </div>
-          </div>
-          <div id="mechanics"class="row">
-            <div class="col-md-3"></div>
+            </div>
+            <hr>
             <div class="col-md-6">
-          
-            <form name="myform" id="myForm">
-                <h5><u>Choose your location to get nearby mechanics</u></h5>
-              Select Country: <select name="country" class="form-control"id="countrySel" size="1">
-              <option value="" selected="selected">Select Country</option>
-              </select>
-              <br>
-              <br>
-              Select County: <select name="county"class="form-control" id="countySel" size="1">
-              <option value="" selected="selected">Please select Country first</option>
-              </select>
-              <br>
-              <br>
-              Select Subcounty: <select name="subCounty" class="form-control"id="subSel" size="1">
-              <option value="" selected="selected">Please select County first</option>
-              </select><br>
-              <input type="button" id="help" class="btn btn-primary" value="submit"><br>
-              <textarea name="mechanics" id="available" cols="30" rows="5" readonly></textarea>  
-            </form>
-          
-          </div>
-          <div class="col-md-3"></div>
-          </div>
+                <form name="myform" id="myForm">
+                    <h5><u>Choose your location to get nearby mechanics</u></h5>
+                  Select Country: <select name="country" class="form-control"id="countrySel" size="1">
+                  <option value="" selected="selected">Select Country</option>
+                  </select>
+                  <br>
+                  <br>
+                  Select County: <select name="county"class="form-control" id="countySel" size="1">
+                  <option value="" selected="selected">Please select Country first</option>
+                  </select>
+                  <br>
+                  <br>
+                  Select Subcounty: <select name="subCounty" class="form-control"id="subSel" size="1">
+                  <option value="" selected="selected">Please select County first</option>
+                  </select><br>
+                  <input type="button" id="help" class="btn btn-primary" value="submit"><br>
+                  <textarea name="mechanics" id="available" cols="30" rows="5" readonly></textarea>  
+                </form>
+            </div>
+          </div> 
           <div class="footer">
               copyright self_repair 2020
           </div>
