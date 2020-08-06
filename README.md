@@ -29,7 +29,7 @@ This is a project on a car repair web app to enable users without the technical 
 ## Support and contact details
 incase of any issues unadressed here or for general comments, contact **self_repair@mechanics.com**
 ### License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellowsvg](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Copyright (c) [2020]
 
