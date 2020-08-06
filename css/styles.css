@@ -220,6 +220,14 @@ hr{
     height: 1em;
   }
 
+.fixes{
+  display: none;
+  padding-bottom: 20px;
+}
+.mechanics{
+  display: none;
+  padding-bottom: 20px;
+}
 
 #info{
     padding-top: 30px;

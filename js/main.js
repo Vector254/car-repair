@@ -114,7 +114,14 @@ function help(){
 
    }
 }
- 
+function showForm(){
+   $(".fixes").show();
+   $("#mechs").hide();
+}
+function showMechanic(){
+   $(".mechanics").show();
+   $("#fixed").hide();
+}
 $(document).ready(function() {
    $("#help").click(function(event) {
      event.preventDefault();
