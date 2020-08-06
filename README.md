@@ -13,8 +13,8 @@ This is a project on a car repair web app to enable users without the technical 
 ## Setup/Installation Requirements
 1. Fork from github repository: https://github.com/Vector254/car-repair.git
 2. Clone the same link to your local repository.
-3. work on the files locally via VScode.
-4. launch via chrome or any other supported browsers.
+3. Work on the files locally via VScode.
+4. Launch via chrome or any other supported browsers.
 
 ## Link to live page
 
@@ -29,7 +29,7 @@ This is a project on a car repair web app to enable users without the technical 
 ## Support and contact details
 incase of any issues unadressed here or for general comments, contact **self_repair@mechanics.com**
 ### License
-MIT License
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellowsvg](https://opensource.org/licenses/MIT)
 
 Copyright (c) [2020]
 
