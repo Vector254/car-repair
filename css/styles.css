@@ -1,5 +1,10 @@
 
-/*Navbar styling*/
+body {
+  background-image: url(carstuck.jpg);
+  font-family: "Poppins";
+  font-family: 'Courgette', cursive;
+ 
+}
 #navbar{
     background-color: rgb(50, 47, 61,0.7) ;
     color: whitesmoke;
@@ -196,15 +201,14 @@
     border-style: solid;
 
 }
-#mapping h3{
-    background-color: #4b5d67;
-    height: 50px;
-    padding-top: 10px;
-}
+
 #mapper{
     margin-top: 50px;
     width: 200px;
     height: 80px;
+    border-width: 1px;
+    border-color:  #cedebd;
+
 }
 #myForm{
   text-align: center;
@@ -230,6 +234,10 @@ hr{
 }
 
 #info{
+    background-color: #cedebd;
+    border-radius: 20px;
+    border-color: mediumblue;
+    border-width: 1px;
     padding-top: 30px;
     text-align: left;
     display: none;
@@ -245,11 +253,7 @@ hr{
   display: none;
 }
 
-body {
-    background-image: url(carstuck.jpg);
-    font-family: "Poppins";
-   
-}
+
 .titleadmin {
     text-align: center;
 }

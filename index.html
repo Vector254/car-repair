@@ -4,10 +4,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="shortcut icon" type="image/x-icon" href="imgs/wrench.png" />
+    <link rel="stylesheet" href="myProjects/webProject/icofont/css/icofont.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   </head>
 <style>;
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Righteous', cursive;
 }
 * {box-sizing: border-box;}
 
@@ -104,6 +108,7 @@ button:hover {
  
   text-align: center;
   height: 260px;
+  background-color: mediumblue;
 }
 .jumbotron img{
   border-radius: 100px;
@@ -118,8 +123,15 @@ button:hover {
   background-color:darkgray;
   
 }
+#user,#admin{
+
+  background-color: mediumblue;
+  color: white;
+  
+}
 .login{
   padding-top: 30px;
+  background-image: url();
   
 }
 .content{
@@ -180,8 +192,8 @@ footer{
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
-      <button class="btn btn-primary" id="user" onclick="userRedirect();">user</button>
-      <button class="btn btn-primary" id="admin" onclick="adminRedirect();">admin</button>
+      <button class="btn" id="user"  onclick="userRedirect();"><i class="fa fa-user" aria-hidden="true"></i>user</button>
+      <button class="btn" id="admin" onclick="adminRedirect();"><i class="fa fa-user-circle-o" aria-hidden="true"></i>admin</button>
       </div>
       <div class="col-md-3"></div>
     </div> 
@@ -193,7 +205,7 @@ footer{
     <div class="sign-up">
     
       <h4>Don't have an account?</h4>
-      <button onclick="document.getElementById('id01').style.display='block'" style="width:fit-content">Sign Up</button>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:fit-content"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
     
     </div>
     </div>
