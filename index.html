@@ -169,8 +169,8 @@ footer{
         <div class="col-md-3"></div>
         <div class="col-md-6">
       <form action="">
-        <input type="text" class="form-control" placeholder="username" >
-        <input type="password" class="form-control" placeholder="password">
+        <input type="text" id="name"class="form-control" placeholder="username" required>
+        <input type="password" id="pass" class="form-control" placeholder="password" required>
       </form>
     </div>
     <div class="col-md-3"></div>
@@ -178,8 +178,8 @@ footer{
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
-      <a href="user.html"><button class="btn btn-primary">user</button></a>
-      <a href="admin.html"><button class="btn btn-primary">admin</button></a>
+      <button class="btn btn-primary" id="user" onclick="userRedirect();">user</button>
+      <button class="btn btn-primary" id="admin" onclick="adminRedirect();">admin</button>
       </div>
       <div class="col-md-3"></div>
     </div> 
@@ -251,6 +251,25 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+function userRedirect() {
+  var username=document.getElementById("name").value;
+  var password=document.getElementById("pass").value;
+  if ((username=="")||(password=="")){
+      alert("Please enter valid details!")
+  }
+  else{
+    window.location.href = "user.html";
+  }
+    }  
+function adminRedirect() {
+  var username=document.getElementById("name").value;
+  var password=document.getElementById("pass").value;
+  if ((username=="")||(password=="")){
+      alert("Please enter valid details!")
+  }
+  else{
+    window.location.href = "admin.html";
+  }  }
 </script>
 
 </body>
