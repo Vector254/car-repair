@@ -56,11 +56,6 @@ enableHighAccuracy: true
 trackUserLocation: true
 })
 );
-$("#exit").click(function(){
-   $("#map").hide();
-   $("#info").hide();
-})
-
 });
 // statics counter
 $(document).ready(function() {
