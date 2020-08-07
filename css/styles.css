@@ -1,7 +1,8 @@
-body {
-    background-image: url(carstuck.jpg);
-    font-family: "Poppins";
-   
+.image{
+   background-image: url("carstuck.jpg");
+   background-color: blueviolet;
+   font-family: 'Shadows Into Light', cursive;
+   color: white;
 }
 .titleadmin {
     text-align: center;
