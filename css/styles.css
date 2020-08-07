@@ -1,5 +1,17 @@
 
-/*Navbar styling
+
+body {
+  background-image: url(carstuck.jpg);
+  font-family: 'Courgette', cursive;
+ 
+}
+.image{
+   background-image: url("carstuck.jpg");
+   background-color: blueviolet;
+   font-family: 'Shadows Into Light', cursive;
+   color: white;
+}
+
 #navbar{
     background-color: rgb(50, 47, 61,0.7) ;
     color: whitesmoke;
