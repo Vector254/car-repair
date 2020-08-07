@@ -1,12 +1,269 @@
+
 .image{
    background-image: url("carstuck.jpg");
    background-color: blueviolet;
    font-family: 'Shadows Into Light', cursive;
    color: white;
 }
+
+body {
+  background-image: url(carstuck.jpg);
+  font-family: "Poppins";
+  font-family: 'Courgette', cursive;
+ 
+}
+#navbar{
+    background-color: rgb(50, 47, 61,0.7) ;
+    color: whitesmoke;
+    display: flex;
+    padding-top: 10px;
+    position: sticky;
+    z-index: 10;
+    height: 100px;
+    font-size: 12px;
+  }
+  #navbar ul{
+    display: flex;
+    list-style: none;
+   
+  }
+  #navbar li a {
+    color: whitesmoke;
+    padding-top: 20px;
+    text-decoration: none;
+    text-transform: lowercase;
+  
+  }
+  #navbar li a:hover{
+    background-color: #4b5d67; 
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+
+/*About us styling*/
+#about-us{
+  color: black;
+  padding: 20px;
+  text-align: center;
+}
+#about-us h2{
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+}
+#about-us h2::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+  padding: 2px;
+}
+
+  /*Manuals styling*/
+#manuals {
+  background: #cedebd;
+
+}
+#manuals h2{
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+
+}
+#manuals h2::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+  padding: 2px;
+}
+
+.row{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+/*client counter styling*/
+
+.container {
+  margin-top: 100px
+}
+
+.counter-box {
+  display: block;
+  background: #f6f6f6;
+  padding: 40px 20px 37px;
+  text-align: center
+}
+
+.counter-box p {
+  margin: 5px 0 0;
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  font-weight: 500
+}
+
+.counter-box i {
+  font-size: 60px;
+  margin: 0 0 15px;
+  color:whitesmoke;
+}
+
+.counter {
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  line-height: 28px
+}
+
+.counter-box {
+  background: #3acf87
+}
+
+.counter-box.colored p,
+.counter-box.colored i,
+.counter-box.colored .counter {
+  color: #fff
+}
+
+
+/*Reviews styling*/
+#reviews{
+  color: black;
+  padding-top: 20px;
+  background: #f0ece3;
+  padding: 15px;
+}
+
+#reviews h3{
+  text-align: center;
+  font-size: 30px;
+}
+#reviews h3::after {
+  content: '';
+  background: #222;
+  display: block;
+  height: 2px;
+  width: 15%;
+  margin: 15px auto 45px;
+  padding: 2px;
+}
+
+
+#reviews .reviewer{
+  text-align: right;
+  font-style: italic;
+  color: #322f3d;
+  font-size: 12px;
+
+}
+
+/*footer styling*/
+#footer{
+  background: darkgrey;
+  color: black;
+  padding-left: 40px;
+}
+#footer h4{
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-weight: bold;
+
+}
+.connect-us{
+  text-align: center;
+}
+.connect-us hr{
+  background-color: black;
+  width: 60%;
+}
+#footer li{
+  color: black;
+}
+.copyright{
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+
+.fa {
+  color: black;
+}
+#mapping{
+    text-align: center;
+}
+
+#map {
+  
+    width:100%;
+    height: 100%;
+    border-style: solid;
+
+}
+
+#mapper{
+    margin-top: 50px;
+    width: 200px;
+    height: 80px;
+    border-width: 1px;
+    border-color:  #cedebd;
+
+}
+#myForm{
+  text-align: center;
+  margin: auto;
+  background-color: #cedebd;
+  padding: 20px;
+  border-color: blue;
+  border-style: solid;
+  border-radius: 10px;
+}
+hr{
+    top: -0.5em;
+    height: 1em;
+  }
+
+.fixes{
+  display: none;
+  padding-bottom: 20px;
+}
+.mechanics{
+  display: none;
+  padding-bottom: 20px;
+}
+
+#info{
+    background-color: #cedebd;
+    border-radius: 20px;
+    border-color: mediumblue;
+    border-width: 1px;
+    padding-top: 30px;
+    text-align: left;
+    font-style: italic;
+}
+#available {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: darkslategray;
+  resize: none;
+  font-family: monospace;
+  text-align: center;
+  display: none;
+}
+
+
 .titleadmin {
     text-align: center;
 }
+
 .navig {
     float: right;
     display: inline-flex;
@@ -46,3 +303,4 @@ nav a::before {
 nav a:hover::before {
     width: 100 ;
 }
+
