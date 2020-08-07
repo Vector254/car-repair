@@ -22,12 +22,13 @@
 </head>
 
 <body>
+  <!--
 	<div class="container-fluid">
-  <!--Navbar styling-->
+  
     <nav id="navbar">
     <h4>VEHICLE SELF REPAIR</h4>
     <ul>
-      <!--edit this-->
+      
       <li><a href="index.html">home</a></li>
       <li><a href="#about">diagnose</a></li>
       <li><a href="#meals">shop</a></li>
@@ -35,7 +36,20 @@
       <li><a href="#contact">contact</a></li>
       <li><input type="text" placeholder="Search.."></li>
     </ul>
-  </nav>
+  </nav>-->
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#carosel">Home</a>
+    <a href="#manuals">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#Contact">Contact</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776; </button>
+    <h2>CAR SELF REPAIR</h2>
+  </div>
   <section id="carosel">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -71,15 +85,7 @@
     </div>
     <!--end of carosel-->
   </section>
-  <section id="about-us">
-    <h2>ABOUT US</h2>
-    <div class="about">
-      <p>At our independently owned and operated car repair shop, we always strive to offer honest services at affordable prices.
-      For over 2 years, we have helped repair cars manufactured in Japan, Korea and beyond! We know what issues to look for with specific brands and models.
-      Therefore, we’re more likely to identify prevalent problems with import brands than other mechanics. Altogether, <strong> we help cars last longer </strong> with our specialized services.
-        Our focus on fuel efficiency also helps us save you more cash.</p>
-    </div>
-  </section>
+
 <section id="manuals">
   <h2>AUTO REPAIR MANUALS</h2>
   <div class="row">
@@ -297,7 +303,19 @@
     </div>
 
 </div>
-
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5ec3c2b26f7d401ccbb7e7f6/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 </html>
