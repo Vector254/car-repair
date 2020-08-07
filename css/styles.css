@@ -132,6 +132,9 @@ body {
   color: #666;
   line-height: 28px
 }
+#main{
+  background-color:#3acf87 ;
+}
 
 .counter-box {
   background: #3acf87
