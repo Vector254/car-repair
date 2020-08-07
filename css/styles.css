@@ -1,4 +1,11 @@
 
+.image{
+   background-image: url("carstuck.jpg");
+   background-color: blueviolet;
+   font-family: 'Shadows Into Light', cursive;
+   color: white;
+}
+
 body {
   background-image: url(carstuck.jpg);
   font-family: 'Courgette', cursive;
@@ -167,6 +174,7 @@ body {
   font-size: 18px;
   padding-bottom: 10px;
   font-weight: bold;
+
 }
 .connect-us{
   text-align: center;

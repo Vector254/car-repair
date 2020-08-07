@@ -87,11 +87,13 @@ function shareIssue (){
         alert("input data")
     } else {
         alert("Thank you for sharing "+name+",and helping others.")
+
     };
     
 
         
 };
+
 function Mechanic(first,last, contact) {
    this.firstName = first;
    this.lastName = last;
@@ -117,6 +119,8 @@ function showMechanic(){
    $(".mechanics").show();
    $("#fixed").hide();
 }
+
+ 
 $(document).ready(function() {
    $("#help").click(function(event) {
      event.preventDefault();
@@ -124,3 +128,4 @@ $(document).ready(function() {
      $("#available").show();
    });
 });
+

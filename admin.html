@@ -7,8 +7,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/main.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <title>ADMIN</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="imgs/wrench.png" />
     <title>Admin</title>
+
     
 </head>
 <body>
@@ -17,6 +22,7 @@
     <nav>
         <ul class="navig">
             <li><a href="user.html">Switch to user</a></li>
+
             <li><a href="index.html">Home </a></li>
         </ul>
     </nav>
@@ -26,6 +32,10 @@
         
        
     </header>
+
+    <div class="image">
+
+
 
     
     <div class="container">
@@ -46,7 +56,7 @@
     <div class="fixes">
     <h3><b><u>Please Fill in This Form</u></b></h3>
 
-    <form>
+    <form class="carform">
         <label for="names"><b>First Name:</b></label> <br>
         <input type="text" class="form-control" id="names" placeholder="Arthur.."><br><br><hr>
         <label for="second"><b>Last Name</b></label><br>
@@ -73,13 +83,15 @@
         <label for="fix"><b>How did you resolve it?</b></label><br>
         <textarea id="fix" class="form-control"placeholder="Enter text here.."></textarea>
         <br><br>
-        <button type="button" class="btn btn-success" id="share" onclick="shareIssue()">POST</button>
+        <button type="submit" class="btn btn-success" id="share" onclick="shareIssue()">POST</button>
         <br><br>
         <div class="output"></div>
     </form>
 
 <br><br><br>
     <h2><b>THANK YOU FOR SHARING</b></h2>
+
+
     </div>
 
      <div class="mechanics">
@@ -95,7 +107,10 @@
          </form>
      </div>
 
+
 </div>
+</div>
+
 
 
 
