@@ -2,7 +2,7 @@
 
 body {
   background-image: url(carstuck.jpg);
-  font-family: 'Courgette', cursive;
+  
  
 }
 .image{
@@ -214,8 +214,7 @@ body {
 #map {
   
     width: 100%;
-    display: none; 
-    height: 100%;
+    height: 80%;
     border-style: solid;
 
 }
@@ -253,10 +252,10 @@ hr{
 }
 
 #info{
-    padding-top: 30px;
+    padding-top: 10px;
     text-align: left;
-    display: none;
     font-style: italic;
+    background-color: #cedebd;
 }
 #available {
   border: 2px solid black;
