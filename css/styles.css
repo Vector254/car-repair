@@ -135,6 +135,9 @@ body {
 #main{
   background-color:#3acf87 ;
 }
+.slide{
+  text-align: center;
+}
 
 .counter-box {
   background: #3acf87
