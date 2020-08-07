@@ -1,27 +1,37 @@
 
+.image{
+   background-image: url("carstuck.jpg");
+   background-color: blueviolet;
+   font-family: 'Shadows Into Light', cursive;
+   color: white;
+}
 
-/*Navbar styling*/
+body {
+  background-image: url(carstuck.jpg);
+  font-family: "Poppins";
+  font-family: 'Courgette', cursive;
+ 
+}
 #navbar{
-    background-color: #322f3d ;
+    background-color: rgb(50, 47, 61,0.7) ;
     color: whitesmoke;
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    padding-top: 10px;
     position: sticky;
-    top:0;
     z-index: 10;
     height: 100px;
-    font-size: 15px;
+    font-size: 12px;
   }
   #navbar ul{
     display: flex;
     list-style: none;
-    text-decoration: none;
+   
   }
   #navbar li a {
     color: whitesmoke;
-    padding: 20px;
+    padding-top: 20px;
     text-decoration: none;
+    text-transform: lowercase;
   
   }
   #navbar li a:hover{
@@ -154,16 +164,6 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
 /*footer styling*/
 #footer{
   background: darkgrey;
@@ -175,6 +175,7 @@
   font-size: 18px;
   padding-bottom: 10px;
   font-weight: bold;
+
 }
 .connect-us{
   text-align: center;
@@ -202,21 +203,19 @@
 
 #map {
   
-    width: 100%;
-    display: none; 
-    height: 350px;
+    width:100%;
+    height: 100%;
     border-style: solid;
 
 }
-#mapping h3{
-    background-color: #4b5d67;
-    height: 50px;
-    padding-top: 10px;
-}
+
 #mapper{
     margin-top: 50px;
     width: 200px;
     height: 80px;
+    border-width: 1px;
+    border-color:  #cedebd;
+
 }
 #myForm{
   text-align: center;
@@ -227,19 +226,40 @@
   border-style: solid;
   border-radius: 10px;
 }
+hr{
+    top: -0.5em;
+    height: 1em;
+  }
+
+.fixes{
+  display: none;
+  padding-bottom: 20px;
+}
+.mechanics{
+  display: none;
+  padding-bottom: 20px;
+}
 
 #info{
-    padding-top: 80px;
+    background-color: #cedebd;
+    border-radius: 20px;
+    border-color: mediumblue;
+    border-width: 1px;
+    padding-top: 30px;
     text-align: left;
-    display: none;
     font-style: italic;
 }
-
-body {
-    background-image: url(carstuck.jpg);
-    font-family: "Poppins";
-   
+#available {
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: darkslategray;
+  resize: none;
+  font-family: monospace;
+  text-align: center;
+  display: none;
 }
+
+
 .titleadmin {
     text-align: center;
 }

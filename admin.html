@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/main.js"></script>
     <script src="js/jquery-3.5.1.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <title>ADMIN</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="imgs/wrench.png" />
+    <title>Admin</title>
+
     
 </head>
 <body>
@@ -15,29 +21,48 @@
         <div class="jumbotron">
     <nav>
         <ul class="navig">
-            <li><a href="#">Back To User</a></li>
-            <li><a href="#">Home </a></li>
+            <li><a href="user.html">Switch to user</a></li>
+
+            <li><a href="index.html">Home </a></li>
         </ul>
     </nav>
             <div class="titleadmin">
-            <h1><b>CAR REPAIR WEBSITE</b></h1></div></div>
+            <h1><b>CAR REPAIR WEBSITE <br>ADMIN DASHBOARD</b></h1><br></div><br>
+        </div>
         
        
     </header>
+
+    <div class="image">
+
+
+
     
     <div class="container">
-    <h5><b>You are logged in as an admin. You are probably a mechanic or a driver that encountered an issue with your vehicle and want to share with others who
-        may find yourself in the situation you were in.
+    <h5><b>You are logged in as an admin. You can either update the mechanics database or post new issues and fixes.
     </b></h5><br><br><hr>
+    <div class="row">
+        <div class="col-md-6">
+    <div id="mechs">
+    <input type="button" class="btn btn-primary"value="Add Mechanics"onclick="showMechanic();">
+    </div>
+        </div>
+        <div class="col-md-6">
+    <div id="fixed">
+    <input type="button"  class="btn btn-primary"value="Update fixes" onclick="showForm();">
+    </div>
+    </div>
+    </div>
+    <div class="fixes">
     <h3><b><u>Please Fill in This Form</u></b></h3>
 
-    <form>
+    <form class="carform">
         <label for="names"><b>First Name:</b></label> <br>
-        <input type="text" id="names" placeholder="Arthur.."><br><br><hr>
+        <input type="text" class="form-control" id="names" placeholder="Arthur.."><br><br><hr>
         <label for="second"><b>Last Name</b></label><br>
-        <input type="text" id="lastName" placeholder="Your last name.."><br><br><hr>
+        <input type="text" class="form-control" id="lastName" placeholder="Your last name.."><br><br><hr>
         <label for="carselect"><b>Car Model</b></label><br>
-        <select name="cars" id="carselect">
+        <select name="cars" class="form-control" id="carselect">
             <option value="sub">Subaru</option>
             <option value="toyota">Toyota</option>
             <option value="BMW">BMW</option>
@@ -54,18 +79,38 @@
         </select><hr>
         <br>
         <label for="issue"><b>What issue did you face?</b></label><br>
-        <textarea id="issue" placeholder="Enter text here.."></textarea> <br><hr>
+        <textarea id="issue" class="form-control" placeholder="Enter text here.."></textarea> <br><hr>
         <label for="fix"><b>How did you resolve it?</b></label><br>
-        <textarea id="fix" placeholder="Enter text here.."></textarea>
+        <textarea id="fix" class="form-control"placeholder="Enter text here.."></textarea>
         <br><br>
-        <button type="button" class="btn btn-primary" id="share" onclick="shareIssue()">SHARE</button>
+        <button type="submit" class="btn btn-success" id="share" onclick="shareIssue()">POST</button>
         <br><br>
         <div class="output"></div>
     </form>
+
 <br><br><br>
     <h2><b>THANK YOU FOR SHARING</b></h2>
 
+
+    </div>
+
+     <div class="mechanics">
+         <form action="">
+             <label for="firstName">First Name:</label>
+             <input type="text"  class="form-control"name="firstName" required>
+             <label for="lastName">Last Name:</label>
+             <input type="text" class="form-control"name="lastName" required>
+             <label for="tel">Contact:</label>
+             <input type="number" class="form-control" name="tel" required>
+             <br><button class="btn btn-success">update</button>
+            
+         </form>
+     </div>
+
+
 </div>
+</div>
+
 
 
 

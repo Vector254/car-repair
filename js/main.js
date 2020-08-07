@@ -56,11 +56,6 @@ enableHighAccuracy: true
 trackUserLocation: true
 })
 );
-$("#exit").click(function(){
-   $("#map").hide();
-   $("#info").hide();
-})
-
 });
 // statics counter
 $(document).ready(function() {
@@ -92,30 +87,45 @@ function shareIssue (){
         alert("input data")
     } else {
         alert("Thank you for sharing "+name+",and helping others.")
+
     };
     
 
         
 };
+
 function Mechanic(first,last, contact) {
    this.firstName = first;
    this.lastName = last;
-   this.tel = contact;
-   this.mechanic = function() {return this.firstName + " " + this.lastName+" Tel: "+this.tel;};
+   this.tel = parseInt(contact);
+   this.details = function() {return "Name:"+" "+this.firstName + " " + this.lastName+"\n Tel: "+this.tel;};
 
  }
 
 function help(){
-   var mechanic = new Mechanic("Martin","Luther", +"254 70000001");
+   let mechanic1 = new Mechanic("Martin","Luther", "070000000");
+   let mechanic2= new Mechanic("King","James","0711111111");
    var location=document.getElementById("subSel").value;
    if (location=="kasarani"){
-      document.getElementById("available").value="Available Mechanics:"+mechanic.tel;
+      document.getElementById("available").value="AVAILABLE: \n"+mechanic1.details()+"\n"+mechanic2.details();
+
    }
 }
+function showForm(){
+   $(".fixes").show();
+   $("#mechs").hide();
+}
+function showMechanic(){
+   $(".mechanics").show();
+   $("#fixed").hide();
+}
+
  
 $(document).ready(function() {
    $("#help").click(function(event) {
      event.preventDefault();
      help();
+     $("#available").show();
    });
 });
+
