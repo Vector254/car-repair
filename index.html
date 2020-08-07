@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,22 +11,26 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
+	crossorigin="anonymous"></script>
+	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+<script src="js/jquery-3.5.1.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
   <script src="js/main.js"></script>
   <title>CAR_REPAIR | WEBSITE</title>
 </head>
 
 <body>
+	<div class="container-fluid">
   <!--Navbar styling-->
   <nav id="navbar">
-    <h2>CAR REPAIR SHOP</h2>
+    <h2>VEHICLE <br>SELF REPAIR</h2>
     <ul>
       <!--edit this-->
-      <li><a href="#home">HOME</a></li>
-      <li><a href="#about">DIAGNOSE</a></li>
-      <li><a href="#meals">FIND A SHOP</a></li>
-      <li><a href="#order">TALK TO A MECHANIC</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">diagnose</a></li>
+      <li><a href="#meals">shop</a></li>
+      <li><a href="#order">mechanics</a></li>
+      <li><a href="#contact">contact</a></li>
       <li><input type="text" placeholder="Search.."></li>
     </ul>
   </nav>
@@ -41,7 +46,9 @@
           <img class="d-block w-100" src="imgs/Car-Maintenance.jpg" alt="First slide">
           <div class="carousel-caption d-none d-md-block">
             <!--Edit this-->
-            <a href="###"><button type="button" class="btn btn-success">Talk To A Mechanic</button></a>
+			<a href="#mechanics"><button type="button" class="btn btn-success">Talk To A Mechanic</button></a>
+			<a href="#mapping"> <button type="button" class="btn btn-success">My location</button></a>
+			
           </div>
         </div>
         <div class="carousel-item">
@@ -142,6 +149,53 @@
         
     </div>
   </section>
+  <section id="mapping">
+    <h3>Know your location and talk to a mechanic nearby below</h3>  
+    <input type="button" class="btn btn-primary" value="where am I?" id="mapper">
+    <div class="row">
+		<div class="col-md-7">
+	<div id="map"></div>
+		</div>
+		<div class="col-md-5">
+	<div id="info">	
+		<h4>Tips</h4>
+		<ul>
+		<li>Click the navigation icon to move to current location.</li>
+		<li>Double tap in map to zoom in.</li>
+		<li>Click navigation icon to zoom out</li>
+		<li>Double tap and hold to move</li>
+		<input type="button" class="btn btn-success" value="exit" id="exit">
+		</ul>
+		</div>
+	</div>
+  </div>
+  <div id="mechanics"class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+  <h5>Choose your location to get nearby mechanics</h5>
+    <form name="myform" id="myForm">
+      Select Country: <select name="country" class="form-control"id="countrySel" size="1">
+      <option value="" selected="selected">Select Country</option>
+      </select>
+      <br>
+      <br>
+      Select County: <select name="county"class="form-control" id="countySel" size="1">
+      <option value="" selected="selected">Please select Country first</option>
+      </select>
+      <br>
+      <br>
+      Select Subcounty: <select name="subCounty" class="form-control"id="subSel" size="1">
+      <option value="" selected="selected">Please select County first</option>
+      </select><br>
+      <input type="button" id="help" class="btn btn-primary" value="submit"><br>
+      <textarea name="mechanics" id="available" cols="30" rows="5" readonly></textarea>  
+    </form>
+  
+  </div>
+  <div class="col-md-3"></div>
+  </div>
+  </section>
+
 <section id="clients">
   <div class="container">
     <div class="row">
@@ -165,7 +219,8 @@
                 <p>Active Users</p>
             </div>
         </div>
-    </div>
+	</div>
+	
 </div>
 </section>
 <section id="reviews">
@@ -226,6 +281,10 @@
 
 
 <section id="footer">
+
+
+
+
   <div id="Contact">
     <div class="row">
         <div class="col-md-3">
@@ -278,7 +337,9 @@
     <div class="copyright">
         <p>CAR_REPAIR 	&nbsp;  © 2020</p>
     </div>
+
 </div>
+
 </section>
   <!--Start of Tawk.to Script-->
   <script type="text/javascript">
@@ -293,5 +354,9 @@
     })();
   </script>
   <!--End of Tawk.to Script-->
+
+
+
+
 </body>
 </html>
